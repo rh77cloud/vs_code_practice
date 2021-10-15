@@ -1,0 +1,18 @@
+  978  conda env list
+  979  conda create -n 'collection-pay-check'
+  980  conda activate collection-pay-model-check
+  981  conda env list
+  982  conda activate collection-pay-check
+  983  pip install -r requirements_linux_2.txt 
+  984  pip install -r collection_pay_model/requirements_linux_2.txt 
+  985  python -V
+  986  pip list --format=freeze > src/collection_pay_model/requirements_linux_3.txt
+  987  cd src/collection_pay_model/
+[ec2-user@ip-10-189-48-188 ~]$ python -m ipykernel install --user --name collection-pay --display-name "collection-pay"
+mv feature-selector-master/ EDA/
+[ec2-user@ip-10-189-48-188 ~]$ mv feature-selector-master/ mv feature-selector-master/ ../feature-selector-master^C
+[ec2-user@ip-10-189-48-188 ~]$ conda create -n 'collection-pay'
+[ec2-user@ip-10-189-48-188 ~]$ conda activate collection-pay
+[ec2-user@ip-10-189-48-188 ~]$ python -m ipykernel install --user --name collection-pay --display-name "collection-pay"
+[ec2-user@ip-10-189-48-188 ~]$ cp -r src/dq_models_pipeline_cfmv3/requirements_linux.txt src/collection_pay_model/
+[ec2-user@ip-10-189-48-188 ~]$ mkdir collection_pay_model
